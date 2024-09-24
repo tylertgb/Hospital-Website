@@ -1,5 +1,4 @@
 @import './partials/config';
-
-.box{
-    background-color: $primary-color;
-}
+@import './partials/mixins';
+@import './partials/general';
+@import './partials/nav';

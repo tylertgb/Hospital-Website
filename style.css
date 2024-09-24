@@ -7,8 +7,3 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-
-/* In SASS we can use variables */
-.box {
-  background-color: #480ca8;
-}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +7,17 @@
     outline: 0;
     list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 /* In SASS we can use variables */
 
 $primary-color: #480ca8;
+$primary-color-varient:#4cc9f0;
+$secondary-color: #f72585;
+$white-color: #ffffff;
+$light-color:rgba(#fff, 0.7);
+$black-color: #0c031b;
+$dark-color: rgba($black-color, 0.7);
+$success-color: #54eb72;
+$container-lg: 82%;
+$container-md: 90%;
