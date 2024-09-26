@@ -37,6 +37,7 @@ section{
 }
 .btn{ 
     @include button();
+    font-weight: 500;
 }
 .btn-primary{
     @include button($white-color, $primary-color);

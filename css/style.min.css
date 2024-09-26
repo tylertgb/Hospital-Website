@@ -64,6 +64,7 @@ section > P {
   cursor: pointer;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
+  font-weight: 500;
 }
 .btn:hover {
   background: #f84c9b;
@@ -513,5 +514,74 @@ header .container .header__content p {
 @media screen and (max-width: 600px) {
   .swiper .swiper-wrapper .swiper-slide {
     padding: 1.5rem;
+  }
+}
+#appointment .container {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+}
+#appointment .container .info p {
+  margin: 0.5rem 0 2rem;
+}
+#appointment .container .info article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appointment .container .info article small {
+  margin-top: 0.4rem;
+  display: block;
+}
+#appointment .container .info article .info-icon {
+  background: #f72585;
+  color: #ffffff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+}
+#appointment .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.4rem;
+}
+#appointment .container form .form__group {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appointment .container form .form__group input, #appointment .container form .form__group textarea, #appointment .container form .form__group select {
+  background: #ffffff;
+  padding: 0.85rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  resize: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+@media screen and (max-width: 600px) {
+  #appointment .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #appointment .container .info h2, #appointment .container .info p {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.min.css.map */
