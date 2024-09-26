@@ -15,3 +15,26 @@ const closeNav = () =>{
 }
 
 closeNavBtn.addEventListener('click', closeNav);
+
+// TESTIMONIALS SECTION Initializing  Swiperjs
+var swiper = new Swiper(".mySwiper", {
+    //SwiperJS uses mobile first responsiveness, So slidesPerView: 1
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    }, 
+
+    // Responsive Breakpoints
+    breakpoints:{
+        //When window width is >= 600px
+        600:{
+            slidesPerView: 2
+        },
+        //When window width is >= 1024px
+        1024:{
+            slidesPerView: 3
+        }
+    }
+  });
