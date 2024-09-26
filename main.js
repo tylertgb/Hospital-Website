@@ -25,6 +25,11 @@ if(window.innerWidth < 1024){
     })
 }
 
+//Change navbar style on scroll
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 300);
+})
+
 // TESTIMONIALS SECTION Initializing  Swiperjs
 var swiper = new Swiper(".mySwiper", {
     //SwiperJS uses mobile first responsiveness, So slidesPerView: 1

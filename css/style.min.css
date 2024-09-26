@@ -111,12 +111,25 @@ nav {
   display: grid;
   place-items: center;
   z-index: 10;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  /*Navbar styles on scroll using Js*/
+}
+nav.window-scroll {
+  background: #ffffff;
   -webkit-box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
           box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
-  background: linear-gradient(135deg, #480ca8, #4cc9f0);
-  color: #ffffff;
 }
-nav h1, nav h2, nav h3, nav h4, nav h5 {
+nav.window-scroll .container button {
+  color: #0c031b;
+}
+nav.window-scroll .container a {
+  color: #0c031b;
+}
+nav.window-scroll .container a > h3 {
+  color: #0c031b;
+}
+nav.window-scroll .container a.btn {
   color: #ffffff;
 }
 nav .container {

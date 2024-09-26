@@ -5,8 +5,32 @@ nav{
     display: grid;
     place-items: center;
     z-index: 10;
-    box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
-    @include gradientBackground();
+    transition: all 400ms ease;
+    // box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
+    // @include gradientBackground();
+
+    /*Navbar styles on scroll using Js*/
+    &.window-scroll{
+        background: $white-color;
+        box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
+        .container{
+            button{
+                color: $black-color;
+            }
+ 
+            a{
+                color: $black-color;
+    
+                & > h3{
+                    color: $black-color;
+                }
+                &.btn{
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
 
     .container{
         display: flex;
